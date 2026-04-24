@@ -1,0 +1,179 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+.container{
+    background:#ffffff;
+    width:100%;
+    max-width:700px;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+.container h1{
+    text-align:center;
+    color:#1e3c72;
+    margin-bottom:8px;
+}
+
+.container p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+}
+
+input, select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+input:focus, select:focus{
+    outline:none;
+    border-color:#2a5298;
+}
+
+.radio-group{
+    display:flex;
+    gap:20px;
+    margin-top:8px;
+}
+
+.radio-group label{
+    font-weight:normal;
+}
+
+.radio-group input{
+    width:auto;
+    margin-right:6px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    background:#1e3c72;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#16325c;
+}
+
+.footer{
+    text-align:center;
+    margin-top:15px;
+    color:#777;
+    font-size:14px;
+}
+
+@media(max-width:600px){
+    .radio-group{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Student Registration Form</h1>
+    <p>Database Management Systems Assignment</p>
+
+    <form>
+
+        <div class="form-group">
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter full name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Roll Number</label>
+            <input type="text" placeholder="Enter roll number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter email address" required>
+        </div>
+
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" required>
+        </div>
+
+        <div class="form-group">
+            <label>Select Program</label>
+            <select required>
+                <option value="">Choose Program</option>
+                <option>BS Computer Science</option>
+                <option>BBA</option>
+                <option>BS Information Technology</option>
+                <option>BS Software Engineering</option>
+                <option>BS Accounting & Finance</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Study Mode</label>
+            <div class="radio-group">
+                <label><input type="radio" name="mode"> Full-Time</label>
+                <label><input type="radio" name="mode"> Part-Time</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Submit Registration</button>
+        </div>
+
+    </form>
+
+    <div class="footer">
+        Designed for Part E Assignment Submission
+    </div>
+</div>
+
+</body>
+</html>
+```
